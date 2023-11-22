@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+    padding:0;
+    margin:0;
+}
+
+.makeleft{
+    justify-content: left;
+    text-align:left;
+    align-items:left;
+}
+
+.video{
+    display:flex;
+    object-fit:cover;
+    position:fixed;
+    z-index:-1;
+    width:100vw;
+    height:47.1vw;
+}
+
+#vidbg{
+    width:100vw;
+    height:100vh;
+    object-fit:cover;
+    position:fixed;
+    z-index:-1;
+}
+
+.pagetitle{
+    color:white;
+}
+
+a{
+    text-decoration:none;
+    color:white;
+}
+nav{
+    display:flex;
+    justify-content: space-around;
+    padding-top:1vw;
+    padding-bottom:1vw;
+    background-color: darkgreen;
+    font-family:'Montserrat';
+}
+
+navfooter{
+    display:flex;
+    justify-content: space-around;
+    padding-top:1vw;
+    padding-bottom:1vw;
+    background-color: darkgreen;
+    font-family:'Montserrat';
+    color:white;
+}
+
+.links a{
+    padding-left:1vw;
+}
+
+.banner{
+    margin-top:15vw;
+    background-color:black;
+    opacity:75%;
+    padding:5vw;
+}
+
+.bannerhead{
+    font-family:'Montserrat';
+    color:white;
+    padding-top:-5vw;
+    font-size:35px;
+    opacity:100%;
+}
+
+.bannertext{
+    font-family:'Montserrat';
+    color:white;
+    padding-top:-5vw;
+    opacity:100%;
+}
+
+.bold{
+    font-weight:bolder;
+}
+
+@media screen and (max-width:600px) {
+    nav{
+        position:relative;
+        
+    }
+    .pagetitle{
+        background-color: darkseagreen;
+        color:white;
+        padding:1vw;
+    }
+    .links{
+        display:none;
+        position:absolute;
+        min-width:160px;
+        box-shadow:0px 8px 16px 0px white;
+        z-index:1;
+        background-color:darkgreen;
+    }
+
+    .links a{
+        color:white;
+        padding:12px 16px;
+        display:block;
+    }
+    .links a:hover{
+        background-color:darkseagreen;
+    }
+    nav:hover .links{
+        display:block;
+    }
+
+    nav:hover .pagetitle{
+        background-color:cadetblue;
+    }
+
+    .video{
+        display:flex;
+        object-fit:cover;
+        position:fixed;
+        z-index:-1;
+        width:100vw;
+        height:200vw;
+    }
+
+    .banner{
+        margin-top:65vw;
+        background-color:black;
+        opacity:75%;
+        padding:5vw;
+    }
+}
