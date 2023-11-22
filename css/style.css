@@ -53,6 +53,13 @@ navfooter{
     background-color: darkgreen;
     font-family:'Montserrat';
     color:white;
+    position:absolute;
+    display:inline;
+    width:100%;
+    left:0;
+    bottom:0;
+    z-index:10;
+    text-align:center;
 }
 
 .links a{
@@ -79,10 +86,6 @@ navfooter{
     color:white;
     padding-top:-5vw;
     opacity:100%;
-}
-
-.bold{
-    font-weight:bolder;
 }
 
 @media screen and (max-width:600px) {
